@@ -58,10 +58,17 @@ form {
 #sec2 {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
+#sec2 h2 {
+  padding-left: 30px;
 }
 
 #preparation {
   display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #preparation-column-1 {
@@ -77,10 +84,14 @@ form {
 ol {
   list-style: none;
   counter-reset: my-awesome-counter;
+  padding-left: 0;
 }
 
 ol li {
   counter-increment: my-awesome-counter;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 ol li::before {
@@ -88,6 +99,12 @@ ol li::before {
   background-color: #cacaca;
   font-size: 150%;
   padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+ol li p {
+  margin: 0;
 }
 
 /*footer*/
@@ -95,11 +112,13 @@ footer {
   display: flex;
   border-top: 2px solid black;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 footer p {
-  margin-left: 30px;
-  margin-right: 50px;
+  margin: 0px;
 }
 
 #linkedin-icon,
@@ -107,8 +126,12 @@ footer p {
 #facebook-icon,
 #x-icon {
   width: 20px;
-  justify-content: left;
   margin-right: 20px;
+}
+
+footer div {
+  display: flex;
+  margin-left: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
