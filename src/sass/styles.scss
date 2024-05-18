@@ -1,0 +1,118 @@
+$myFont: Arial, Helvetica, sans-serif;
+
+body {
+  margin: 0px;
+}
+
+/*header*/
+h1 {
+  font-family: $myFont;
+  font-size: 250%;
+  text-align: center;
+}
+
+/*main*/
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d6b699;
+}
+
+#falafel-banner {
+  width: 700px;
+}
+
+/*section 1*/
+
+#sec1 {
+  display: flex;
+  justify-content: center;
+  font-family: $myFont;
+}
+
+form {
+  background-color: #cacaca;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 50px;
+  padding: 15px;
+  font-family: $myFont;
+}
+
+#ingredients {
+  display: flex;
+}
+
+#ingredients-column-1 {
+  margin-right: 15px;
+}
+
+#time-contents {
+  display: flex;
+}
+
+#clock {
+  margin-right: 15px;
+  width: 50px;
+}
+
+/*section 2*/
+
+#sec2 {
+  justify-content: center;
+  font-family: $myFont;
+}
+
+#preparation {
+  display: flex;
+}
+
+#preparation-column-1 {
+  margin-right: 30px;
+}
+
+#sec2 h2 {
+  justify-content: center;
+  font-family: $myFont;
+  margin-left: 15px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  background-color: #cacaca;
+  font-size: 150%;
+  padding: 10px;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  border-top: 2px solid black;
+  font-family: $myFont;
+  
+}
+
+footer p{
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+#linkedin-icon,
+#insta-icon,
+#facebook-icon,
+#x-icon{
+  width: 20px;
+  justify-content: left;
+  margin-right: 20px;
+}
+
